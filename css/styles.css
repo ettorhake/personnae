@@ -1,0 +1,347 @@
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #E2E2E2;
+    --accent-color: #FF6B6B;
+    --success-color: #4CAF50;
+    --warning-color: #FFC107;
+    --text-color: #333333;
+    --background-color: #FFFFFF;
+    --photo-url: none;
+    --section-bg-1: #F8F9FE;
+    --section-bg-2: #FEF8F9;
+    --section-bg-3: #F8FEF9;
+    --section-bg-4: #FEF9F8;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Inter', sans-serif;
+}
+
+.control-panel {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    overflow-y: auto;
+    padding: 2rem;
+}
+
+.preview-panel {
+    background-color: #f5f5f5;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 2rem !important;
+}
+
+.persona-card {
+    background-color: var(--background-color);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.persona-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.persona-header.has-photo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--photo-url);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.75;
+    mix-blend-mode: soft-light;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+
+.persona-header:hover::before {
+    opacity: 0.85;
+}
+
+.persona-header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        var(--primary-color) 0%, 
+        rgba(74, 144, 226, 0.8) 50%,
+        rgba(74, 144, 226, 0.4) 100%
+    );
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.persona-header > * {
+    position: relative;
+    z-index: 3;
+}
+
+.client-logo {
+    width: 100px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.persona-photo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.persona-photo.has-photo .persona-photo-placeholder {
+    display: none;
+}
+
+.persona-photo.has-photo {
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.persona-photo-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #ccc;
+    border: 4px solid white;
+}
+
+
+
+.persona-name {
+    color: white;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.persona-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.persona-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.persona-section {
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+    min-width: 0; /* Empêche le dépassement du contenu */
+    height: fit-content; /* Adaptation à la hauteur du contenu */
+}
+
+.persona-section:nth-child(1) {
+    background-color: var(--section-bg-1);
+    border-top: 4px solid var(--primary-color);
+    grid-column: 1 / -1; /* Section profil sur toute la largeur */
+}
+
+.persona-section:nth-child(2) {
+    background-color: var(--section-bg-2);
+    border-top: 4px solid var(--accent-color);
+}
+
+.persona-section:nth-child(3) {
+    background-color: var(--section-bg-3);
+    border-top: 4px solid var(--success-color);
+}
+
+.persona-section:nth-child(4) {
+    background-color: var(--section-bg-4);
+    border-top: 4px solid var(--warning-color);
+}
+
+.persona-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.persona-section h3 {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+.profile-info {
+    display: grid;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.profile-info p {
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    line-height: 1.4;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.profile-info strong {
+    color: var(--primary-color);
+    flex-shrink: 0;
+    min-width: 80px;
+}
+
+.persona-content {
+    white-space: pre-line;
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+.content-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+    padding: 0.5rem 0.75rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.content-item:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.content-item:before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-top: -0.1rem;
+}
+
+/* Style des boutons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .persona-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .control-panel, .preview-panel {
+        height: auto;
+    }
+    
+    .persona-header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .client-logo {
+        margin: 0 auto;
+    }
+
+    .persona-photo {
+        margin: 0 auto;
+    }
+}
+
+/* Animation de mise à jour */
+.update-animation {
+    animation: highlight 1s ease-in-out;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: rgba(74, 144, 226, 0.2);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+/* Styles pour les étiquettes de formulaire */
+.form-label {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+/* Styles pour les étiquettes min/max des critères d'évaluation */
+.eval-minmax {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.eval-minmax span {
+    padding: 0.25rem 0.5rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
