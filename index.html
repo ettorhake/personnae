@@ -50,92 +50,167 @@
                 <div class="mb-4">
                     <h3 class="h5">Informations Persona</h3>
                     <form id="personaForm">
-                        <div class="mb-3">
-                            <label class="form-label">Nom</label>
-                            <input type="text" class="form-control" name="nom">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Âge</label>
-                            <input type="number" class="form-control" name="age">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Poste</label>
-                            <input type="text" class="form-control" name="poste">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Entreprise</label>
-                            <input type="text" class="form-control" name="entreprise">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Localisation</label>
-                            <input type="text" class="form-control" name="localisation">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Expérience</label>
-                            <textarea class="form-control" name="experience" rows="3"></textarea>
-                        </div>
                         <div class="mb-4">
-                            <h4 class="h6">Premier critère</h4>
+                            <h4 class="h6"><span class="badge bg-secondary me-2">1</span>Premier champ</h4>
                             <div class="mb-2">
                                 <label class="form-label">Libellé du critère</label>
-                                <input type="text" class="form-control" name="label-connaissance" value="Niveau de connaissance de l'outil">
+                                <input type="text" class="form-control" id="label-nom" name="label-nom" value="Nom">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contenu</label>
+                                <input type="text" class="form-control" id="nom" name="nom">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="h6"><span class="badge bg-secondary me-2">2</span>Deuxième champ</h4>
+                            <div class="mb-2">
+                                <label class="form-label">Libellé du critère</label>
+                                <input type="text" class="form-control" id="label-age" name="label-age" value="Âge">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contenu</label>
+                                <input type="number" class="form-control" id="age" name="age">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="h6"><span class="badge bg-secondary me-2">3</span>Troisième champ</h4>
+                            <div class="mb-2">
+                                <label class="form-label">Libellé du critère</label>
+                                <input type="text" class="form-control" id="label-localisation" name="label-localisation" value="Localisation">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contenu</label>
+                                <input type="text" class="form-control" id="localisation" name="localisation">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="h6"><span class="badge bg-secondary me-2">4</span>Quatrième champ</h4>
+                            <div class="mb-2">
+                                <label class="form-label">Libellé du critère</label>
+                                <input type="text" class="form-control" id="label-poste" name="label-poste" value="Poste / Statut">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contenu</label>
+                                <input type="text" class="form-control" id="poste" name="poste">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="h6"><span class="badge bg-secondary me-2">5</span>Cinquième champ</h4>
+                            <div class="mb-2">
+                                <label class="form-label">Libellé du critère</label>
+                                <input type="text" class="form-control" id="label-experience" name="label-experience" value="Contexte">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contenu</label>
+                                <textarea class="form-control" id="experience" name="experience" rows="3"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="h6"><span class="badge bg-secondary me-2">6</span>Sixième champ</h4>
+                            <div class="mb-2">
+                                <label class="form-label">Libellé du critère</label>
+                                <input type="text" class="form-control" id="label-entreprise" name="label-entreprise" value="Situation médicale">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contenu</label>
+                                <input type="text" class="form-control" id="entreprise" name="entreprise">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="h6"><span class="badge bg-secondary me-2">7</span>Premier critère</h4>
+                            <div class="mb-2">
+                                <label class="form-label">Libellé du critère</label>
+                                <input type="text" class="form-control" id="label-connaissance" name="label-connaissance" value="Niveau de connaissance">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Note (1-5)</label>
-                                <input type="range" class="form-range" name="connaissance" min="1" max="5" value="3">
+                                <input type="range" class="form-range" id="connaissance" name="connaissance" min="1" max="5" value="3">
                                 <div class="d-flex justify-content-between">
-                                    <input type="text" class="form-control form-control-sm w-25" name="label-connaissance-min" value="Débutant">
-                                    <input type="text" class="form-control form-control-sm w-25" name="label-connaissance-max" value="Expert">
+                                    <input type="text" class="form-control form-control-sm w-25" id="label-connaissance-min" name="label-connaissance-min" value="Débutant">
+                                    <input type="text" class="form-control form-control-sm w-25" id="label-connaissance-max" name="label-connaissance-max" value="Expert">
                                 </div>
                             </div>
                         </div>
                         
                         <div class="mb-4">
-                            <h4 class="h6">Deuxième critère</h4>
+                            <h4 class="h6"><span class="badge bg-secondary me-2">8</span>Deuxième critère</h4>
                             <div class="mb-2">
                                 <label class="form-label">Libellé du critère</label>
-                                <input type="text" class="form-control" name="label-comprehension" value="Niveau de compréhension de l'outil">
+                                <input type="text" class="form-control" id="label-comprehension" name="label-comprehension" value="Niveau de compréhension">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Note (1-5)</label>
-                                <input type="range" class="form-range" name="comprehension" min="1" max="5" value="3">
+                                <input type="range" class="form-range" id="comprehension" name="comprehension" min="1" max="5" value="3">
                                 <div class="d-flex justify-content-between">
-                                    <input type="text" class="form-control form-control-sm w-25" name="label-comprehension-min" value="Basique">
-                                    <input type="text" class="form-control form-control-sm w-25" name="label-comprehension-max" value="Approfondie">
+                                    <input type="text" class="form-control form-control-sm w-25" id="label-comprehension-min" name="label-comprehension-min" value="Basique">
+                                    <input type="text" class="form-control form-control-sm w-25" id="label-comprehension-max" name="label-comprehension-max" value="Approfondie">
                                 </div>
                             </div>
                         </div>
                         
                         <div class="mb-4">
-                            <h4 class="h6">Troisième critère</h4>
+                            <h4 class="h6"><span class="badge bg-secondary me-2">9</span>Troisième critère</h4>
                             <div class="mb-2">
                                 <label class="form-label">Libellé du critère</label>
-                                <input type="text" class="form-control" name="label-distraction" value="Taux de distraction environnement">
+                                <input type="text" class="form-control" id="label-distraction" name="label-distraction" value="Taux de distraction">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Note (1-5)</label>
-                                <input type="range" class="form-range" name="distraction" min="1" max="5" value="3">
+                                <input type="range" class="form-range" id="distraction" name="distraction" min="1" max="5" value="3">
                                 <div class="d-flex justify-content-between">
-                                    <input type="text" class="form-control form-control-sm w-25" name="label-distraction-min" value="Faible">
-                                    <input type="text" class="form-control form-control-sm w-25" name="label-distraction-max" value="Élevé">
+                                    <input type="text" class="form-control form-control-sm w-25" id="label-distraction-min" name="label-distraction-min" value="Faible">
+                                    <input type="text" class="form-control form-control-sm w-25" id="label-distraction-max" name="label-distraction-max" value="Élevé">
                                 </div>
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Objectifs professionnels</label>
-                            <textarea class="form-control" name="objectifs" rows="4"></textarea>
+                        <div class="mb-4">
+                            <h4 class="h6"><span class="badge bg-secondary me-2">10</span>Dixième champ</h4>
+                            <div class="mb-2">
+                                <label class="form-label">Libellé du critère</label>
+                                <input type="text" class="form-control" id="label-objectifs" name="label-objectifs" value="Objectifs personnels">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contenu</label>
+                                <textarea class="form-control" id="objectifs" name="objectifs" rows="4"></textarea>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Besoins fonctionnels</label>
-                            <textarea class="form-control" name="besoins" rows="4"></textarea>
+                        <div class="mb-4">
+                            <h4 class="h6"><span class="badge bg-secondary me-2">11</span>Onzième champ</h4>
+                            <div class="mb-2">
+                                <label class="form-label">Libellé du critère</label>
+                                <input type="text" class="form-control" id="label-besoins" name="label-besoins" value="Besoins fonctionnels">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contenu</label>
+                                <textarea class="form-control" id="besoins" name="besoins" rows="4"></textarea>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Frustrations</label>
-                            <textarea class="form-control" name="frustrations" rows="4"></textarea>
+                        <div class="mb-4">
+                            <h4 class="h6"><span class="badge bg-secondary me-2">12</span>Douzième champ</h4>
+                            <div class="mb-2">
+                                <label class="form-label">Libellé du critère</label>
+                                <input type="text" class="form-control" id="label-frustrations" name="label-frustrations" value="Frustrations">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contenu</label>
+                                <textarea class="form-control" id="frustrations" name="frustrations" rows="4"></textarea>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Opportunités UX</label>
-                            <textarea class="form-control" name="opportunites" rows="4"></textarea>
+                        <div class="mb-4">
+                            <h4 class="h6"><span class="badge bg-secondary me-2">13</span>Treizième champ</h4>
+                            <div class="mb-2">
+                                <label class="form-label">Libellé du critère</label>
+                                <input type="text" class="form-control" id="label-opportunites" name="label-opportunites" value="Opportunités UX">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Contenu</label>
+                                <textarea class="form-control" id="opportunites" name="opportunites" rows="4"></textarea>
+                            </div>
                         </div>
                         <div class="d-grid gap-2">
                             <button type="button" class="btn btn-primary" id="applyChangesBtn">
@@ -176,14 +251,15 @@
                         <div class="persona-section">
                             <h3>Profil</h3>
                             <div class="profile-info">
-                                <p><strong>Âge:</strong> <span id="preview-age">-</span></p>
-                                <p><strong>Poste:</strong> <span id="preview-poste">-</span></p>
-                                <p><strong>Entreprise:</strong> <span id="preview-entreprise">-</span></p>
-                                <p><strong>Localisation:</strong> <span id="preview-localisation">-</span></p>
-                                <p><strong>Expérience:</strong> <span id="preview-experience">-</span></p>
+                                <p><span class="badge bg-info me-2">1</span><strong>Nom:</strong> <span id="preview-nom">-</span></p>
+                                <p><span class="badge bg-info me-2">2</span><strong>Âge:</strong> <span id="preview-age">-</span></p>
+                                <p><span class="badge bg-info me-2">3</span><strong id="preview-label-localisation">Localisation:</strong> <span id="preview-localisation">-</span></p>
+                                <p><span class="badge bg-info me-2">4</span><strong id="preview-label-poste">Poste:</strong> <span id="preview-poste">-</span></p>
+                                <p><span class="badge bg-info me-2">5</span><strong id="preview-label-experience">Expérience:</strong> <span id="preview-experience">-</span></p>
+                                <p><span class="badge bg-info me-2">6</span><strong id="preview-label-entreprise">Entreprise:</strong> <span id="preview-entreprise">-</span></p>
                                 
                                 <div class="mt-4">
-                                    <p><strong id="preview-connaissance-title">Niveau de connaissance de l'outil</strong></p>
+                                    <p><span class="badge bg-success me-2">7</span><strong id="preview-connaissance-title">Niveau de connaissance de l'outil</strong></p>
                                     <div class="progress mb-2" style="height: 20px;">
                                         <div id="preview-connaissance-bar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
@@ -192,7 +268,7 @@
                                         <span id="preview-connaissance-max">Expert</span>
                                     </div>
                                     
-                                    <p><strong id="preview-comprehension-title">Niveau de compréhension de l'outil</strong></p>
+                                    <p><span class="badge bg-success me-2">8</span><strong id="preview-comprehension-title">Niveau de compréhension de l'outil</strong></p>
                                     <div class="progress mb-2" style="height: 20px;">
                                         <div id="preview-comprehension-bar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
@@ -201,35 +277,34 @@
                                         <span id="preview-comprehension-max">Approfondie</span>
                                     </div>
                                     
-                                    <p><strong id="preview-distraction-title">Taux de distraction environnement</strong></p>
+                                    <p><span class="badge bg-success me-2">9</span><strong id="preview-distraction-title">Taux de distraction environnement</strong></p>
                                     <div class="progress mb-2" style="height: 20px;">
+                                        <span id="preview-distraction-min" style="position: absolute; left: 5px; top: -25px; font-size: 0.85em;">Faible</span>
                                         <div id="preview-distraction-bar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <span id="preview-distraction-max" style="position: absolute; right: 5px; top: -25px; font-size: 0.85em;">Élevé</span>
                                     </div>
-                                    <div class="evaluation-minmax mb-3">
-                                        <span id="preview-distraction-min">Faible</span>
-                                        <span id="preview-distraction-max">Élevé</span>
-                                    </div>
+                                    <div class="evaluation-minmax mb-3"></div>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="persona-section">
-                            <h3>Objectifs professionnels</h3>
+                            <h3 id="preview-label-objectifs">Objectifs professionnels</h3>
                             <div id="preview-objectifs" class="persona-content">-</div>
                         </div>
                         
                         <div class="persona-section">
-                            <h3>Besoins fonctionnels</h3>
+                            <h3 id="preview-label-besoins">Besoins fonctionnels</h3>
                             <div id="preview-besoins" class="persona-content">-</div>
                         </div>
                         
                         <div class="persona-section">
-                            <h3>Frustrations</h3>
+                            <h3 id="preview-label-frustrations">Frustrations</h3>
                             <div id="preview-frustrations" class="persona-content">-</div>
                         </div>
                         
                         <div class="persona-section">
-                            <h3>Opportunités UX</h3>
+                            <h3 id="preview-label-opportunites">Opportunités UX</h3>
                             <div id="preview-opportunites" class="persona-content">-</div>
                         </div>
                     </div>

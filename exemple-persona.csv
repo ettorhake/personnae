@@ -1,0 +1,62 @@
+# GÉNÉRATEUR DE PERSONAS - FICHIER D'EXEMPLE
+# ============================================
+# Ce fichier CSV démontre la structure complète du système de personas numérotés
+# 
+# STRUCTURE: 13 champs positionnés (1-13)
+# - Positions 1-6: Profil (Nom, Âge, Localisation, Poste, Expérience, Entreprise)
+# - Positions 7-9: Critères d'Évaluation (Connaissance, Compréhension, Distraction)
+# - Positions 10-13: Sections Textuelles (Objectifs, Besoins, Frustrations, Opportunités)
+#
+# MODE D'EMPLOI:
+# 1. Importer ce fichier CSV dans l'application
+# 2. Les valeurs se remplissent automatiquement dans le formulaire (positions 1-13)
+# 3. Éditer les labels ou contenus directement dans le formulaire
+# 4. Voir les modifications en temps réel dans la prévisualisation
+# 5. Exporter la persona en image PNG
+#
+# IMPORTANT: L'ordre des colonnes est CRUCIAL
+# Respecter exactement: Nom, Âge, Localisation, Poste, Contexte, SituationMédicale, 
+#                       Connaissance, Compréhension, Distraction, Objectifs, Besoins, Frustrations, Opportunités
+#
+
+Nom,Âge,Localisation,Poste,Contexte,SituationMédicale,Connaissance,Compréhension,Distraction,Objectifs,Besoins,Frustrations,Opportunités
+"Sophie Martin",28,"Lyon, France","Product Manager","5 ans en gestion de produit chez une startup tech","Excellente santé, hyperactive","4","4","2","Simplifier les workflows des équipes produit et améliorer la collaboration inter-départementale avec des outils intuitifs","Intégration fluide avec les outils existants (Slack, Jira, Figma), tableaux de bord personnalisables, système de notifications intelligent, API robuste","Interface trop complexe, documentation insuffisante, temps d'apprentissage trop long, support client lent","Design UX plus intuitif et minimaliste, onboarding progressif et interactif, tutoriels vidéo intégrés, mode sombre pour moins de fatigue visuelle"
+"Jean Dupont",35,"Paris, France","UX/UI Designer","3 ans dans l'industrie du design digital","Légère dyslexie, utilise des outils d'accessibilité","3","4","3","Créer des expériences utilisateur cohérentes et accessibles, respecter les normes WCAG","Systèmes de design robustes, outils de collaboration en temps réel, accès aux métriques d'utilisation, templates réutilisables","Manque de feedback utilisateur, divergences de vision avec l'équipe produit, migration de données complexe","Prototype collaboratif temps réel, analytics utilisateur intégrées, composants accessibles pré-validés, guide d'accessibilité intégré"
+"Marie Chen",32,"Tokyo, Japon","Technical Lead","8 ans en développement backend, 2 ans en leadership","Très active, légère insomnie due aux fuseaux horaires","5","4","4","Maintenir une architecture scalable et former les junior développeurs, réduire la dette technique","Documentation technique automatisée, CI/CD transparent et rapide, environnements de test isolés, outils de monitoring avancés","Lenteur du système, dépendances mal documentées, tests fragmentés, communication difficile avec d'autres équipes","Refonte de l'architecture modulaire, audit automatisé du code, templates de tests unitaires, dashboard centralisé de tous les services"
+"Antoine Rousseau",26,"Bordeaux, France","Junior Developer","1 an en tant que développeur junior","Aucun problème de santé signalé","2","2","4","Progresser rapidement dans les technologies cloud, contribuer à des features importantes, trouver son style de code","Tutoriels interactifs, code review constructive, mentoring régulier, documentation claire avec exemples","Manque de clarté des specs, peur de faire des erreurs, sentiment d'être laissé de côté, documentation obsolète","Onboarding structuré par modules, environnement de test sans risque, pair programming planifié, FAQ communautaire active"
+"Fatima Al-Rashid",41,"Dubaï, Émirats Arabes Unis","Project Manager","12 ans de gestion de projets complexes dans le secteur public et privé","Diabète contrôlé, très organisée","3","3","1","Améliorer la communication entre équipes, livrer les projets à temps, maintenir la qualité","Vue d'ensemble des tâches et dépendances, rapports d'avancement automatisés, intégration calendrier, notifications graduées par priorité","Trop de notifications parasites, données fragmentées sur plusieurs outils, pas de vue globale du projet, rapports manuels chronophages","Dashboard de synthèse personnalisable, gantt interactif et intuitif, alertes intelligentes par criticité, exports rapides en PowerPoint"
+
+# NOTES SUR LES DONNÉES D'EXEMPLE:
+# 
+# - Les âges varient de 26 à 41 ans pour représenter plusieurs générations
+# - Les localisations incluent international (Tokyo, Dubaï) pour tester la compatibilité
+# - Les valeurs des critères (Connaissance, Compréhension, Distraction) vont de 1 à 5
+# - Les contextes incluent des détails réalistes (années d'expérience, domaines)
+# - Les situations médicales sont inclusives (dyslexie, diabète, hyperactivité)
+# - Les objectifs, besoins, frustrations et opportunités sont détaillés et concrets
+#
+# UTILISATION RECOMMANDÉE:
+# 1. Testez d'abord avec une seule persona (la première ligne)
+# 2. Vérifiez que tous les champs se remplissent correctement
+# 3. Testez l'édition des labels et valeurs
+# 4. Testez l'export PNG
+# 5. Puis testez avec plusieurs personas en succession rapide
+# 6. Vérifiez que les animations fonctionnent correctement
+#
+# STRUCTURE DES COLONNES (ORDRE IMMUABLE):
+# [1]  Nom - Prénom et nom du persona
+# [2]  Âge - Âge numérique (entier)
+# [3]  Localisation - Ville/Région/Pays
+# [4]  Poste - Titre et responsabilités
+# [5]  Contexte - Expérience professionnelle et background
+# [6]  SituationMédicale - Santé, allergies, handicaps
+# [7]  Connaissance - Niveau 1-5 (1=débutant, 5=expert)
+# [8]  Compréhension - Niveau 1-5 (1=basique, 5=approfondie)
+# [9]  Distraction - Niveau 1-5 (1=très concentré, 5=très distrait)
+# [10] Objectifs - Buts professionnels et personnels
+# [11] Besoins - Fonctionnalités et outils nécessaires
+# [12] Frustrations - Points douloureux et irritants
+# [13] Opportunités - Améliorations et solutions potentielles
+#
+# VERSION: 1.0
+# DERNIÈRE MISE À JOUR: Octobre 2025
